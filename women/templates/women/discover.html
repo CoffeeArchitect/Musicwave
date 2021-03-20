@@ -1,0 +1,26 @@
+{% extends 'women/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="discover-main-section">
+    <div class="call-to-action">
+        <h1 class="title">Discover new music</h1>
+        <div class="icon-section">
+            <div class="icon">
+                <img src="{% static 'women/images/microphone.svg' %}">
+                Charts
+            </div>
+            <div class="icon">
+                <img src="{% static 'women/images/albums.svg' %}">
+                Albums
+            </div>
+            <div class="icon">
+                <img src="{% static 'women/images/more.svg' %}">
+                More
+            </div>
+        </div>
+        By joining you can benefit by listening to the latest albums released.
+    </div>
+    <img class="covers-image" src="{% static 'women/images/covers.jpg' %}">
+</section>
+{% endblock %}
